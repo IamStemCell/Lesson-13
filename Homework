@@ -8,3 +8,19 @@ def count_local_vars():
     b = 2
     c = 3
     print(len(locals()))
+
+
+#Task 2
+#Write a Python program to access a function inside a function (Tips: use function, which returns another function)
+
+
+def out_function():
+    def inner_function():
+        print("Inside inner function")
+    return inner_function
+
+inner = out_function() #внутрішня функція доступна зі scope зовнішньої тому ми спочатку маємо викликати зовнішню функцію, щоб дістатись до внутрішньої як до об'єкта.
+inner()  #виводить в консоль: "Inside inner function"
+
+
+
