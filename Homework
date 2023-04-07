@@ -1,0 +1,10 @@
+#Task 1
+
+#Write a Python program to detect the number of local variables declared in a function.
+#з допомогою вбудованої функції locals() отримаємо словник  з локальними змінними у функції. Довжина цього словника і є кількість змінних, заявлених у функції.
+
+def count_local_vars():
+    a = 1
+    b = 2
+    c = 3
+    print(len(locals()))
